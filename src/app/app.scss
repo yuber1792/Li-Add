@@ -1,4 +1,4 @@
-// http://ionicframework.com/docs/theming/
+// http://ionicframework.com/docs/v2/theming/
 
 
 // App Global Sass
@@ -14,3 +14,2794 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+
+
+.ion-md-Inicio:before,
+.ion-md-Inicio-circle:before,
+.ion-md-Inicio-circle-outline:before,
+.ion-md-Inicio:before,
+.ion-md-Inicio-outline:before {
+  content: url('../assets/icon/INICIO.svg');
+
+
+
+
+  //background-image : '../assets/icon/iconinicio.png';
+}
+.ion-md-Tatuarme:before,
+.ion-md-Tatuarme-circle:before,
+.ion-md-Tatuarme-circle-outline:before,
+.ion-md-Tatuarme:before,
+.ion-md-Tatuarme-outline:before {
+  content: url('../assets/icon/TATUARME.svg');
+
+  //background-image : '../assets/icon/iconinicio.png';
+}
+.ion-md-Tienda:before,
+.ion-md-Tienda-circle:before,
+.ion-md-Tienda-circle-outline:before,
+.ion-md-Tienda:before,
+.ion-md-Tienda-outline:before {
+  content: url('../assets/icon/TIENDA.svg');
+
+  //background-image : '../assets/icon/iconinicio.png';
+}
+.ion-md-Perfil:before,
+.ion-md-Perfil-circle:before,
+.ion-md-Perfil-circle-outline:before,
+.ion-md-Perfil:before,
+.ion-md-Perfil-outline:before {
+  content: url('../assets/icon/PERFIL.svg');
+
+  //background-image : '../assets/icon/iconinicio.png';
+}
+
+.ion-md-Guardar:before,
+.ion-md-Guardar-circle:before,
+.ion-md-Guardar-circle-outline:before,
+.ion-md-Guardar:before,
+.ion-md-Guardar-outline:before {
+  content: url('../assets/icon/GUARDAR.svg');
+  //background-image : '../assets/icon/iconinicio.png';
+}
+
+
+.ion-md-Magazink:before,
+.ion-md-Magazink-circle:before,
+.ion-md-Magazink-circle-outline:before,
+.ion-md-Magazink:before,
+.ion-md-Magazink-outline:before {
+  content: url('../assets/icon/MAGAZINK4.svg')  ;
+
+
+}
+
+ion-icon {
+  &[class*="icon-"] {
+      // Instead of using the font-based icons
+      // We're applying SVG masks
+      mask-size: contain !important;
+      mask-position: 50% 50% !important;
+      mask-repeat: no-repeat !important;
+      width: 1em !important;
+      height: 1em !important;
+  }
+  // custom icons
+  &[class*="rankinkIcon"] {
+      mask-image:  url('../assets/icon/INICIO.svg') ;
+      background: currentColor;
+      width: 1.4em !important;
+      height: 1.4em !important;
+  }
+  &[class*="tatuarmeIcon"] {
+      mask-image: url('../assets/icon/TATUARME.svg');
+      background: currentColor;
+      width: 1.4em !important;
+      height: 1.4em !important;
+  }
+  &[class*="magazinkIcon"] {
+      mask-image:url('../assets/icon/MAGAZINK4.svg');
+      background: currentColor;
+      width: 1.4em !important;
+      height: 1.4em !important;
+  }
+  &[class*="tiendaIcon"] {
+      mask-image: url('../assets/icon/TIENDA.svg');
+      background: currentColor;
+      width: 1.4em !important;
+      height: 1.4em !important;
+  }
+  &[class*="perfilIcon"] {
+      mask-image:url('../assets/icon/PERFIL.svg');
+      background: currentColor;
+      width: 1.4em !important;
+      height: 1.4em !important;
+  }
+}
+
+/*
+
+.tabbar, .tabs-ios, .tabs-md {
+    .tab-button-icon {
+       background-repeat:no-repeat;
+        background-position:center;
+        height:48px;
+        width:48px;
+      //  content: url('../assets/icon/MAGAZINK4.svg');
+        &:before {
+            display:none;
+        }
+    }
+}
+
+*/
+
+
+
+
+
+
+
+.centerComprar {
+  padding-left: 10%;
+  width: 80%;
+}
+body {
+
+//	font-family: 'FuturaStd-Medium';
+	font-family: 'gotham-light';
+
+}
+
+.fuente-gris {
+	color:#97999C !important;
+}
+.fuente-blanco {
+	color:#fff !important;
+}
+.fuente-negra {
+	color:#fff !important;
+}
+.fuente-rojo {
+	color:#F05B5B !important;
+}
+.fuente-verde {
+	color:#62c2a4 !important;
+}
+.fuente-verdeClaro {
+	color:#a8c94b !important;
+}
+.color-verde{
+	color : #a8c94b !important ;
+}
+.fuente-heavy {
+	//font-family: 'FuturaStd-Heavy';
+	font-family: 'gotham-bold' !important;
+}
+.fuente-bold {
+
+	//font-family: 'FuturaStd-Heavy';
+	font-family: 'gotham-bold' !important;
+}
+.fuente-medium {
+
+	//font-family: 'FuturaStd-Heavy';
+	font-family: 'gotham-medium' !important;
+}
+.fuente-light {
+	//font-family: 'FuturaStd-Heavy';
+	font-family: 'gotham-light' !important;
+}
+.fuente-centrado {
+	text-align:center;
+}
+
+.fondo-gris {
+	color:#2e3030 !important;
+}
+
+.fuente-38 {
+	font-size:3.8rem !important;
+	line-height:3.8rem !important;
+}
+
+.fuente-30 {
+	font-size:3.0rem !important;
+	line-height:3.0rem !important;
+}
+.fuente-25 {
+	font-size:2.5rem !important;
+	line-height:2.5rem !important;
+}
+.fuente-20 {
+	font-size:2.0rem !important;
+	line-height:2.0rem !important;
+}
+.fuente-18 {
+	font-size:1.8rem !important;
+	line-height:1.8rem !important;
+}
+.fuente-17 {
+	font-size:1.7rem !important;
+	line-height:1.7rem !important;
+}
+.fuente-15 {
+	font-size:1.5rem !important;
+	line-height:1.5rem !important;
+}
+.fuente-13 {
+	font-size:1.3rem !important;
+	line-height:1.3rem !important;
+}
+.fuente-12 {
+	font-size:1.2rem !important;
+	line-height:1.2rem !important;
+}
+.fuente-11 {
+	font-size:1.1rem !important;
+	line-height:1.1rem !important;
+}
+.fuente-10 {
+	font-size:1.0rem !important;
+	line-height:1.0rem !important;
+}
+.fuente-09 {
+	font-size:0.9rem !important;
+	line-height:0.9rem !important;
+}
+.fuente-08 {
+	font-size:0.8rem !important;
+	line-height:0.8rem !important;
+}
+.fuente-07 {
+	font-size:0.7rem !important;
+	line-height:0.7rem !important;
+}
+.fuente-06 {
+	font-size:0.6rem !important;
+	line-height:0.6rem !important;
+}
+
+
+
+@font-face {
+    font-family: 'gotham-black';
+    //src: url('../assets/fonts/GOTHAM/ufonts.com_gotham-black.ttf')
+     src: url('../assets/fonts/GOTHAM/ufonts.com_gotham-medium.ttf')
+}
+
+/*@font-face {
+    font-family: 'gotham-medium';
+    src: url('../assets/fonts/GOTHAM/ufonts.com_gotham-medium.ttf')
+}*/
+@font-face {
+    font-family: 'gotham-medium';
+    //src: url('../assets/fonts/GOTHAM/ufonts.com_gotham-bold.ttf')
+    src: url('../assets/fonts/GOTHAM/ufonts.com_gotham-medium.ttf')
+}
+@font-face {
+    font-family: 'gotham-light';
+    src: url('../assets/fonts/GOTHAM/ufonts.com_gotham-book.ttf')
+}
+
+
+.preguntaEncuesta {
+	color :white;
+	text-align:center;
+	font-size:2.0rem;
+}
+
+
+.tabs-md .tab-button[aria-selected=true] {
+    color: #fff; /*your  text color */
+    background: #F05B5B; /* your background color*/
+
+}
+.tabs-md .tab-button[aria-selected=false] {
+    color: #fff; /*your  text color */
+    background: #2E3031; /* your background color*/
+}
+
+.fondoglobal {
+      background: #2E3031 ;
+}
+
+
+
+
+.fondoglobal {
+      background: #4d4d4d ;
+}
+
+.margin-top {
+  margin-top: 10%;
+}
+.margin-top5 {
+  margin-top: 5%;
+}
+
+.fondo{
+  padding-left: 10pt;
+  background-color: #4D4D4D;
+  color: white;
+  font-size: 8pt;
+  height: 5%;
+
+}
+
+.button-inicio {
+	width:80%;
+    padding-left: 10%;
+	max-width:410px;
+	border:none;
+	color:#FFFFFF;
+
+	font-family: 'gotham-light';
+	font-size:1.5rem;
+	line-height:1.5rem;
+	text-align:center;
+	padding:10px 0px;
+	border-radius:5px;
+	background-color:#CBCBCB;
+	//border-bottom:solid 4px #5C5C5C;
+	//margin-bottom:20px;
+}
+.btn-solicitud{
+  height: 4rem;
+
+}
+
+.width-80{
+  width:80%;
+}
+
+.btn-cerrarSesion {
+	width:80%;
+	margin-left:10%;
+
+	//max-width:410px;
+	border:none;
+	color:#FFFFFF;
+	font-family: 'gotham-light';
+	font-size:1.5rem;
+	line-height:1.5rem;
+	text-align:center;
+	padding:10px 0px;
+	border-radius:0.5rem;
+	background-color:#CBCBCB;
+
+	//border-bottom:solid 4px #5C5C5C;
+	//margin-bottom:20px;
+}
+.btn {
+	width:100%;
+	max-width:410px;
+	border:none;
+	color:#FFFFFF;
+	font-family: 'gotham-light';
+	font-size:1.5rem;
+	line-height:1.5rem;
+	text-align:center;
+	padding:10px 0px;
+	border-radius:5px;
+	background-color:#CBCBCB;
+
+	//border-bottom:solid 4px #5C5C5C;
+	//margin-bottom:20px;
+}
+.btn-ver-artista {
+	width:40%;
+
+	border:none;
+	color:#FFFFFF;
+	font-family: 'gotham-light';
+	font-size:1.5rem;
+	line-height:1.5rem;
+	text-align:center;
+	padding:8px 0px;
+	border-radius:5px;
+	background-color:#CBCBCB;
+
+	//border-bottom:solid 4px #5C5C5C;
+	//margin-bottom:20px;
+}
+/*------------------stilos botones----------------*/
+.btn-azul {
+	background-color:#475994;
+	//border-bottom-color:#2c417f;
+}
+.btn-rojo {
+	background-color:#b24637;
+	border-bottom-color:#9f2b22;
+}
+.btn-naranja {
+	background-color:#FB1E17;
+	//border-bottom-color:#c08a25;
+}
+
+.btn-small {
+	width:70%;
+	max-width: 100px;
+	border:none;
+	color:#FFFFFF;
+	font-family: 'gotham-light';
+	font-size: 0.8rem;
+	line-height: 0.8rem;
+	text-align:center;
+	padding: 5px 0px;
+	border-radius: 3px;
+	background-color:#CBCBCB;
+	border-bottom: solid 2px #5C5C5C;
+	//margin-bottom:20px;
+}
+.btn-disabled {
+	width:100%;
+	max-width:410px;
+	border:none;
+	color:#cccccc;
+	font-family: 'gotham-light';
+	font-size:1.5rem;
+	line-height:1.5rem;
+	text-align:center;
+	padding:10px 0px;
+	border-radius:5px;
+	background-color:#999999;
+	border-bottom:solid 4px #666666;
+	//margin-bottom:20px;
+}
+/*------------------colores botones----------------*/
+.btn-azul {
+	background-color:#3b5998;
+	border-bottom-color:#193f82;
+}
+.btn-rojo {
+	background-color:#ea696e;
+	border-bottom-color:#c1272d;
+}
+/*.btn-rojo-med {
+	background-color:#ea696e;
+	border-bottom-color:#c1272d;
+}*/
+.btn-rojo-osc {
+	background-color:#ce4433;
+	border-bottom-color:#ba271c;
+}
+.btn-naranja {
+	background-color:#fbae17;
+	border-bottom-color:#c18214;
+}
+.btn-verde {
+	background-color:#62c2a4;
+	//border-bottom-color:#258968;
+}
+.btn-verdeClaro {
+	background-color:#A8C94B;
+	//border-bottom-color:#258968;
+}
+/*---------------btn cerrar--------------------*/
+.btn-cerrar {
+	width: 4rem;
+	height: 4rem;
+	border: none;
+	border-radius: 50%;
+	background-color: #ea696e;
+	background-image: url(../assets/icon/iconCerrar.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+
+.btn-guarda-tattoo {
+	width: 4rem;
+	height: 4rem;
+	border: none;
+	border-radius: 50%;
+	background-color: #4d4e4e;;
+
+	background-image: url(../assets/images/guardaTattoo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+.btn-guarda-tattoo-fuera {
+	width: 5rem;
+	height: 5rem;
+	border: none;
+
+	background-image: url(../assets/images/guardaTattoo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.btn-cerrar-float-derecha {
+	position: absolute;
+	z-index: 2;
+	top: 2%;
+	left: 83%;
+}
+
+.btn-cerrar-float-programar {
+	position: absolute;
+	z-index: 2;
+	top: 80%;
+	left: 57%;
+	width:40%
+}
+
+.btn-cerrar-float {
+	position: absolute;
+	z-index: 2;
+	top: 10px;
+	left: 10px;
+}
+
+.btn-cerrar-float-magazink {
+	position: absolute;
+	z-index: 2;
+	top: 12%;
+	left: 4%;
+}
+
+.btn-guardar-detalle-tatuaje {
+	position: absolute;
+	z-index: 2;
+	top: 12%;
+	left: 83%;
+}
+
+
+.btn-cerrar-float-publicidad-inicio {
+	position: absolute;
+	z-index: 2;
+	top: 6%;
+	left: 85%;
+}
+
+.btn-cerrar-negro {
+	background-color:#333333;
+}
+
+.btn-calificarSize {
+
+  width: 100%;
+}
+
+.btn-cuida-tatuaje {
+	border:none;
+	-webkit-appearance:none;
+	background-color:#62c2a4;
+	position: absolute;
+	z-index: 1;
+	bottom: 8%;
+	left: 0px;
+	font-family: 'gotham-light';
+	font-size: 1rem;
+	line-height: 1rem;
+	padding: 6px 10px 6px 35px;
+	background-image:url(../assets/icon/iconEstrella.svg);
+	background-repeat:no-repeat;
+	background-position: 5px center;
+	background-size: 15%;
+}
+
+
+/*------------------iconos----------------*/
+.iconComprar {
+	background-image:url(../assets/icon/iconCompra.svg);
+	background-repeat: no-repeat;
+	background-position: 25% center;
+	background-size: 8%;
+}
+
+.iconSmall {
+	background-position: 9% center;
+	background-size: 21%;
+}
+
+.iconAguja {
+	background-image:url(../assets/icon/iconAguja.svg);
+	background-repeat: no-repeat;
+	background-position: 25% center;
+	background-size: 8%;
+}
+
+
+.iconDescargar1 {
+	background-image:url(../assets/icon/DESCARGAR.svg);
+	background-repeat: no-repeat;
+	background-position: 25% center;
+	background-size: 8%;
+}
+
+
+
+
+
+
+/*-------------lista ranking-----------------*/
+.lista-raking {
+	width: 100%;
+	list-style: none;
+	padding: 0px;
+}
+.lista-raking li {
+	display: flex;
+	border-bottom: solid 1px #000;
+	padding: 0px 0px 10px 0px;
+	//margin-bottom: 10px;
+	font-family: 'gotham-light';
+	align-items: center;
+}
+.lista-raking li:last-child {
+	border-bottom: none;
+	padding: 0px;
+}
+.puesto-raking {
+	color: #62C2A4;
+	font-size: 1.6rem;
+	margin-right: 10px;
+}
+.conte-infoPersona {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+.foto-perfil {
+	width: 50px;
+	overflow: hidden;
+	border-radius: 50%;
+	flex-shrink: 0;
+	height: 50px;
+	margin-right: 10px;
+}
+.foto-perfil img {
+	width: 100%;
+	height: auto;
+}
+.conte-infoPersona .nombre {
+	color: #1A1A1A;
+	padding-left :  5%;
+}
+.conte-infoPersona .nombreArtistaSolicitud {
+	color: #1A1A1A;
+	padding-left :  5%;
+  width: 85%;
+}
+.conte-infoPersona .nombreCompras {
+	color: #1A1A1A;
+	padding-left :  5%;
+	width :75% ;
+	//background-color :red ;
+}
+.votacion {
+	display: flex !important;
+	flex-direction: column !important;
+	flex-grow: 1 !important;
+	align-items: center !important;
+	align-self: stretch !important;
+	justify-content: space-around !important;
+	max-width: 30% !important ;
+  border-bottom:  none !important  ;
+
+
+}
+
+.flex-column {
+	flex-direction: column !important;
+	display :flex ;
+}
+.estrellas {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-height: 36px;
+	background-position: center;
+}
+.star-cero {
+	background-image: url(../img/star-cero.png);
+}
+.star-uno {
+	background-image: url(../img/star-uno.png);
+}
+.star-dos {
+	background-image: url(../img/star-dos.png);
+}
+.star-tres {
+	background-image: url(../img/star-tres.png);
+}
+.star-cuatro {
+	background-image: url(../img/star-cuatro.png);
+}
+.star-cinco {
+	background-image: url(../img/star-cinco.png);
+}
+.estrellas img {
+	width: 100%;
+	height: auto
+}
+.votos {
+	font-size: 1.1rem;
+	text-align: center;
+	font-family: 'gotham-black';
+	color: #4d4d4d;
+}
+
+/*---------------------lista carga de fotos-----------------*/
+.lista-cargaFoto {
+	width: 100%;
+	list-style: none;
+	padding: 0px;
+	background-color: white;
+	float: left;
+}
+.lista-cargaFoto li.content-cuadrado {
+	position: relative;
+	width: 31.333%;
+	float: left;
+	border-color: #808080;
+	margin: 1%;
+	min-width: auto;
+}
+.lista-cargaFoto li.content-cuadrado:last-child {
+/* margin: 0px; */
+}
+.lista-cargaFoto li.content-cuadrado:after {
+	content: "+";
+	display: block;
+	padding-bottom: calc(50% - 15px);
+	//color: #62c2a4;
+	font-size: 30px;
+	line-height: 29px;
+	padding-top: calc(50% - 15px);
+}
+.lista-cargaFoto li.content-cuadrado > .contenido {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+.lista-cargaFoto li.content-cuadrado > .contenido img {
+	width: 100%;
+	height: 100%;
+	}
+/*-------------lista solicitudes-----------------*/
+.lista-solicitudes {
+	width: 100%;
+	list-style: none;
+	padding: 0px;
+}
+.lista-solicitudes li {
+	display: flex;
+	//border-bottom: solid 1px #000;
+	padding: 0px 0px 10px 0px;
+	margin-bottom: 10px;
+	font-family: 'gotham-light';
+	align-items: center;
+}
+.lista-solicitudes li:last-child {
+	border-bottom: none;
+	padding: 0px;
+}
+.lista-solicitudes .btn {
+	font-size: 0.8rem;
+	margin: 0px;
+	padding: 5px 0px;
+}
+/*-----------------lista consejos---------------------*/
+.lista-consejos {
+	width: 100%;
+	list-style: none;
+	padding: 0px;
+}
+.lista-consejos li {
+	display: flex;
+	padding: 15px 10px;
+	font-family: 'gotham-light';
+	align-items: center;
+}
+.lista-consejos li:nth-child(2n) {
+	background-color: #333333;
+}
+.lista-consejos li:nth-child(2n+1) {
+	background-color: #4d4d4d;
+}
+.lista-consejos li .puesto-raking {
+	color: #62C2A4;
+	font-size: 1.7rem;
+	margin-right: 10px;
+}
+.lista-consejos li .consejo {
+	color: #fff;
+	font-size: 1.4rem;
+}
+/*-----------------lista calificaciones------------------*/
+
+.lista-calificaciones {
+	width: 100%;
+	list-style: none;
+	padding: 0px;
+}
+.lista-calificaciones li {
+	display: flex;
+	padding: 15px 10px;
+	font-family: 'gotham-light';
+	align-items: center;
+}
+.lista-calificaciones li:nth-child(2n) {
+	background-color: #e6e6e6;
+}
+.lista-calificaciones li:nth-child(2n+1) {
+	background-color: #f2f2f2;
+}
+.lista-calificaciones .btn {
+	font-size: 0.8rem;
+	margin: 0px;
+	padding: 5px 0px;
+}
+.lista-calificaciones .votacion {
+	display: flex;
+	flex-direction: column;
+	flex-grow: initial;
+	align-items: center;
+	align-self: stretch;
+	justify-content: space-around;
+	max-width: none;
+	flex-shrink: 0;
+	width: 110px;
+}
+
+
+
+/*-------------lista tatuajes------------------*/
+/*
+.img-circle {
+
+    border-radius: 50%;
+	width: 80%;
+	height: 80%;
+
+}
+
+.wrapper {
+  width:7em;
+  height:7em;
+  overflow: hidden;
+  border-radius:50%;
+  position: relative;
+}
+
+.wrapper img {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%)
+}
+
+*/
+.div-class{
+width: 7em;
+
+}
+
+.wrapper-perfil {
+	width: 9rem;
+	height: 7rem;
+	//overflow: hidden;
+	border-radius: 50%;
+	position: relative;
+	//background-color: red;
+	flex-shrink: 0;
+	//min-width: 30%;
+	//min-height: 30%;
+
+	//margin-right: 5%;
+	//background-color:red;
+	text-align:center;
+}
+
+
+.wrapper-perfil span.nombre {
+	position: absolute;
+	left: 0;
+	bottom: -2.2rem;
+	z-index :10;
+	font-size:1.0rem;
+  text-align: center;
+
+}
+
+.wrapper-perfil img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.img-circle-perfil {
+	border-radius: 50%;
+	width: 70%;
+	height: 90%;
+	//left :10% ;
+
+
+}
+
+
+
+////////
+.wrapper {
+	width: 5em;
+	height: 5em;
+	//overflow: hidden;
+	border-radius: 50%;
+	position: relative;
+	//background-color: red;
+	flex-shrink: 0;
+	min-width: 5em;
+	min-height: 5em;
+	margin-right: 5%;
+	//background-color:red;
+	text-align:center;
+}
+
+.wrapper span.nombre {
+	position: absolute;
+	left: 0;
+	bottom: -2.2rem;
+	z-index :10;
+	font-size:1.0rem;
+
+}
+
+.wrapper img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.img-circle {
+	border-radius: 50%;
+	width: 95%;
+	height: 95%;
+	left :5%
+}
+
+
+.img-circle-grande {
+    border-radius: 50%;
+	width: 100%;
+	height: 100%;
+
+}
+
+.wrapper-grande {
+  width:7em;
+  height:7em;
+  overflow: hidden;
+  border-radius:50%;
+  position: relative;
+  left:20%;
+
+
+}
+
+.wrapper-grande img {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%)
+}
+
+
+
+.wrapper-solicitud img {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%)
+}
+
+
+.img-circle-solicitud {
+    border-radius: 50%;
+	width: 100%;
+	height: 100%;
+
+}
+
+.wrapper-solicitud {
+  width:3.5em;
+  height:3.5em;
+  overflow: hidden;
+  border-radius:50%;
+  position: relative;
+
+
+}
+
+
+
+
+
+
+.lista-tatuajes {
+	width: 100%;
+	list-style: none;
+	margin-top: 0px;
+	//margin-top : -3% ;
+	float: left;
+	//margin-bottom :0px;
+  //background-color: blue
+}
+.lista-tatuajes li.content-cuadrado {
+	position: relative;
+	width: 33.33%;
+	//padding-left :1%;
+	float: left;
+	border : solid 1px #ffffff;
+	min-width: 25%;
+	box-sizing:border-box ;
+}
+
+.lista-tatuajes.lista-cuatro li {
+	position: relative;
+	width: 25%;
+	float: left;
+	text-align: center;
+	//margin-bottom: 10px;
+}
+.lista-tatuajes.lista-cuatro li div.content-cuadrado {
+	position: relative;
+	width: 100%;
+	float: left;
+	border: solid 2px white;
+	text-align: center;
+	overflow: hidden;
+	margin: 0;
+	min-width: 100%;
+  min-height: 100%;
+	border-radius: 50%;
+}
+
+
+.lista-tatuajes.lista-cuatro li div.content-cuadrado .contenido img {
+  width: 100%;
+  height: 100%;
+
+  transform: scale(1.4);
+}
+
+.lista-tatuajes li.content-cuadrado:last-child {
+	margin: 0px;
+}
+.lista-tatuajes li.content-cuadrado:after {
+	content: "";
+	display: block;
+	//padding-bottom: 100%;
+
+}
+
+.lista-tatuajes li.content-cuadrado > .contenido {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.lista-tatuajes li.content-cuadrado > .contenido img {
+	width: 100%;
+	height:100%;
+  margin-top:30%;
+
+  //transform: scale(1.6);
+
+}
+
+.lista-tatuajes.lista-cuatro li.content-cuadrado > .contenido {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+
+
+}
+
+/*-------------ENCABEZADOS------------------*/
+
+
+.header-seccion {
+	background-color: #333333;
+	padding-top: 5pt ;//20px;
+	padding-bottom: 4pt ;
+	//margin-bottom: 10px;
+  height: 7%;
+  border: 1pt solid white;
+}
+.seccion-intermedia h3 {
+	font-family: 'gotham-light';
+	margin: 0px;
+	padding-top:  0%;
+	font-weight: normal;
+	font-size: 1.3rem;
+	color: #62c2a4;
+
+}
+.seccion-principal {
+	display: flex;
+	align-items: center;
+	padding: 0px 0px 10px 0px ;
+    height: 9%;
+}
+.seccion-principal h3 {
+	font-family: 'gotham-black';
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+	font-size: 2.3rem;
+	color: #62c2a4;
+	text-align: center;
+	display: inline-block;
+	width: calc(100% - 40px);
+}
+.titulo-blanco {
+	color: #fff !important;
+}
+.centrado {
+	text-align: center;
+}
+.header-tatuaje {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+.header-tatuaje .nombre {
+	flex-grow: 1;
+	font-family: 'gotham-light';
+	font-size: 1.2rem;
+}
+.header-tatuaje .foto-perfil {
+}
+.header-tatuaje .fecha {
+	color: #808080;
+	font-family: 'gotham-light';
+	font-size: 0.6rem;
+}
+.header-tatuaje {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+.header-tatuaje .nombre {
+	flex-grow: 1;
+	font-family: 'gotham-light';
+	font-size: 1rem;
+}
+.header-tatuaje .foto-perfil {
+}
+.header-tatuaje .fecha {
+	color: #808080;
+	font-family: 'gotham-light';
+	font-size: 0.6rem;
+}
+.header-ranking {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	//background-color : blue ;
+}
+
+
+
+.header-magazink {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+.header-magazink .divAt {
+	text-align :right;
+	display:flex;
+	flex-direction:column ;
+	flex-grow:1;
+
+}
+.header-magazink img {
+	height :10%  ;
+	width :8%  ;
+
+}
+.divAt .headerPowered1 {
+	flex-grow: 1;
+	font-family: 'gotham-light';
+	font-size: 1.2rem;
+	justify-content : flex-end;
+
+
+}
+.divAt .headerPowered2 {
+	flex-grow: 1;
+	font-family: 'gotham-light';
+	font-size: 1.8rem;
+	justify-content : flex-end;
+	padding-left : 30%;
+}
+
+
+.top5{
+  top:4%;
+  height: 84%;
+  margin-bottom: 4% ;
+}
+
+.header-ranking .nombre {
+	flex-grow: 1;
+	font-family: 'gotham-light';
+	font-size: 1rem;
+}
+.header-ranking .titulo {
+	width : 60%;
+}
+.header-ranking .puntos {
+	width : 15%;
+}
+.header-ranking .puntosNombre {
+	width : 22%;
+}
+.header-ranking .icono {
+	width : 5%;
+}
+
+.header-ranking .boton {
+	width : 22%;
+	margin-left : 40%;
+}
+.header-ranking .opciones {
+	display: flex;
+	align-items: center;
+}
+.header-ranking .opciones span {
+	font-family: 'gotham-light';
+	font-size: 1.1rem;
+	color:#808080;
+}
+.header-ranking .opciones span.activo {
+	color:#62c2a4;
+	font-weight:bold;
+}
+
+.header-ranking .selector {
+	width: 30px;
+	margin: 0px 5px;
+}
+.header-ranking .fecha {
+	color: #808080;
+	font-family: 'gotham-light';
+	font-size: 0.6rem;
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+}
+.switch input {
+	display: none;
+}
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #cccccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	left: 0px;
+	bottom: 0px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border: solid 1px #000;
+}
+input:checked + .slider {
+	background-color: #cccccc;
+}
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+	/* -webkit-transform: translateX(10px); */
+	-ms-transform: translateX(10px);
+	/* transform: translateX(10px); */
+	left: 10px;
+}
+/* Rounded sliders */
+.slider.round {
+	border-radius: 10px;
+	border: solid 1px #1a1a1a;
+}
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.margin-b-10 {
+
+	margin-bottom : 3rem;
+}
+.header-superior {
+	width: 100%;
+	background-color: #4d4d4d;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.info-general {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-family: 'gotham-light';
+	font-size: 0.6rem;
+}
+.info-general li {
+	padding: 0px 5px 0px 13px;
+	border-right: solid 1px #000;
+	margin-right: 5px;
+}
+.info-general li:last-child {
+	padding: 0px;
+	border-right: none;
+	margin-right: 0px;
+	flex-grow: 1;
+}
+.general-tatuajes, .general-calificaciones, .general-inkPoints {
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.general-tatuajes {
+	background-image: url(../img/iconTatuaje.svg);/* background-size: 19%; */
+}
+.general-calificaciones {
+	background-image: url(../img/iconCalificaciones.svg);/* background-size: 15%; */
+}
+.general-inkPoints {
+	background-image: url(../img/iconInkPoints.svg);/* background-size: 27%; */
+}
+
+
+
+/*-------------SCROLL----------------*/
+/* CSS Document */
+.content-scroll {
+	width: 100%;
+	height: 17%; // ORIGINAL 120 PX
+	overflow-y: HIDDEN;
+	overflow-x: scroll;
+	/* background-color: grey; */
+	display: inline-flex;
+	padding-top: 4%;
+  padding-left: 3%;
+  padding-bottom: 8%;
+    padding-top: 0PX;
+	box-sizing: border-box;
+}
+.square {
+	/* border: 5px solid red; */
+	position: relative;
+	text-align: center;
+	width: 24%;
+	border-radius: 50%;
+	overflow: hidden;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	min-width: 24%;
+	margin-right: 5%;
+}
+.square:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+.contentindo {
+	/* position: absolute; */
+	width: 100%;
+	height: 100%;
+	background-color: aquamarine;
+}
+
+.contentindo img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+/*------------------------------scroll horizontal fotos---------------*/
+/*.content-scroll {
+	width: 100%;
+	height: 120px;
+	overflow-y: HIDDEN;
+	overflow-x: scroll;
+
+	display: inline-flex;
+	padding: 20px;
+	box-sizing: border-box;
+}*/
+/* CSS Document */
+.content-scroll {
+	width: 100%;
+	height: 17%; // ORIGINAL 120 PX
+	overflow-y: HIDDEN;
+	overflow-x: scroll;
+	/* background-color: grey; */
+	display: inline-flex;
+	//padding: 20px;
+    padding-top: 0PX;
+	box-sizing: border-box;
+	margin-bottom :0px;
+}
+.info-tatuador {
+	width: 24%;
+	margin-right: 5%;/* display: flex; *//* flex-direction: column; */
+}
+.info-tatuador.grande {
+	width: 100%;
+	margin-right: 0;
+	display: block;
+	text-align: center;
+	color: #333333;
+}
+.info-tatuador {
+
+}
+
+.nombre-tatuador {
+
+	margin-top:80%;
+	margin-left :1.1rem;
+	font-size :1.0rem;
+	line-height:1.0rem;
+
+/* display: inline-block; */
+    /* font-family: 'FuturaStd-Medium'; */
+    /* font-size: 0.5rem; */
+    /* line-height: 0.5rem; */
+}
+
+.nombre-tatuador-scroll {
+ position:absolute;
+ left:0;
+ bottom: -10 px;
+}
+
+.info-tatuador.grande .circulo {
+	margin-bottom: 5px;
+}
+.circulo {
+	/* border: 5px solid red; */
+	position: relative;
+	text-align: center;
+	width: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	min-width: 100%;/* margin-right: 5%; */
+}
+.circulo.activo {
+	box-shadow: 0 0 0 2px white, 0 0 0 5px #62c2a4;
+}
+.circulo:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;/* position: absolute; */
+}
+.foto-scroll {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: aquamarine;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.foto-scroll-circle {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: aquamarine;
+	border-radius: 50%;
+	overflow: hidden;
+	padding-left:50%;
+}
+.foto-scroll img {
+	width: 100%;
+	height: auto;
+	transform: scale(1.2);
+}
+/*------------------------------scroll horizontal inkPoints---------------*/
+.content-scroll-inkPoints {
+	width: 100%;
+	height: 25%;
+	overflow-y: HIDDEN;
+	overflow-x: scroll;
+	background-color: grey;
+	display: inline-flex;
+	box-sizing: border-box;
+}
+.content-cuadrado {
+	//border: 1px solid black;
+	position: relative;
+	text-align: center;
+	width: 38%;
+	height :100%;
+	overflow: hidden;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	min-width: 33.333%;
+	margin-right: -1px;
+}
+.content-cuadrado:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+.content-cuadrado:last-child {
+	margin-right: 20px;
+}
+.contenido {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contenido .precio {
+	//background-color: #62c2a4;
+	display: inline-block;
+	position: absolute;
+	top: 1rem;
+	left: 0px;
+	font-family: 'gotham-black';
+	color: #fff;
+	font-size: 1.3rem;
+	padding: 2px 3px;
+	line-height: 1.3rem;
+	font-weight: normal;
+}
+.contenido .descripcion {
+	display: block;
+	position: absolute;
+	font-family: 'gotham-light';
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+	font-size: 1.2rem;
+	width: 100%;
+	padding: 2px 0px;
+}
+.contenido img {
+	width: 80%;
+	//padding-bottom :10%;
+	margin-bottom:  30%;
+	height: 90%;
+}
+.scroll-productos .precio {
+	background-color: #666666;
+	padding: 2px 5px;
+	top: 5px;
+}
+.scroll-productos .descripcion {
+	//background-color: #62c2a4;
+	background-color: #999;
+	color: #fff;
+
+}
+.content-scroll-inkPoints.scroll-productos {
+	height: 25%;
+}
+
+
+/*************************LAYOUT INICIO ****************************/
+.content-blanco {
+	background-color: #fff;
+}
+.content-gris {
+	background-color: #e6e6e6;
+}
+.content-semigris {
+	background-color: #e6e6e6;
+}
+.content-grisClaro {
+	//background-color: #f2f2f2;
+	background-color: #97999C;
+}
+.content-grisOscuro {
+	background-color: #4d4e4e;
+}
+.content-rojoOscuro {
+	background-color: #c1272d;
+}
+.content-negro {
+	background-color: #1a1a1a;
+}
+.content-gris-666{
+	background-color:#666666;
+}
+.content-gris-4d{
+	background-color:#4d4d4d;
+}
+.content-naranja {
+	background-color:#fbae17;
+}
+.content-verde {
+	background-color:#88a80d;
+}
+.content-verdeApp {
+	background-color:#62c2a4;
+}
+.content-amarillo {
+	background-color:#FBAE17;
+}
+
+.content-rojo {
+	background-color:#F05B5B;
+
+}
+.content-blanco {
+	background-color:#ffffff;
+}
+
+.content-layout, .content-slide, .content-general {
+	width: 100%;
+}
+.content-layout {
+	position: relative;
+}
+.content-general.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.content-slide img {
+	width: 100%;
+	height: auto;
+}
+.content-general {
+	padding: 1.8rem 0.1rem;
+	box-sizing: border-box;
+
+}
+
+.content-row {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.paddingTop {
+	margin-top : 10%;
+}
+
+.paddingTop-5 {
+	margin-top : 5%;
+}
+.content-mitad {
+	width: 50%;
+	padding: 10px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.content-80 {
+	width: 80%;
+	left: 10% ;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.content-todo {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.content-mitad-row {
+	width: 50%;
+	padding: 10px;
+	box-sizing: border-box;
+	display: flex;
+	align-items:center;
+}
+
+.content-30 {
+	width: 30%;
+  height: 30%;
+	padding: 3%;
+  //padding-top: 10%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+  //background-color: red;
+}
+.content-40 {
+	width: 40%;
+	padding: 10px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.content-60 {
+	width: 60%;
+	padding: 10px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.content-70 {
+//  background-color: red;
+	width: 70%;
+  //height: 20%;
+	padding: 3%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.content-100 {
+	width: 100%;
+	//padding: 10px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.content-btn-lg {
+	width: 90%;
+	margin: 0px auto;
+}
+.titulo-premio {
+	font-family: 'gotham-black';
+	color: #62c2a4;
+	margin: 0px;
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	text-align: center;
+	//margin-bottom: 20px;
+	font-weight: normal;
+}
+.titulo-consejo {
+	width: 80%;
+	margin: 0px auto 10px auto;
+	padding: 0px 0px 10px 0px;
+	border-bottom:solid 1px #000;
+	text-align:center;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	display:block;
+}
+.subtitulo-consejo {
+	margin: 0px auto 10px auto;
+	padding: 10px 0px 10px 0px;
+	border-bottom:solid 1px #666666;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	display:block;
+}
+
+.titulo-inkPoints {
+	font-family: 'gotham-black';
+	color: #62c2a4;
+	margin: 0px;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+.titulo-inkPoints {
+	font-family: 'gotham-black';
+	color: #000;
+	margin: 0px;
+	font-size: 1.1rem;
+	line-height: 1.1rem;
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: normal;
+	background:url(../img/iconInkPoints-grande.svg) no-repeat left center;
+	background-size:10%;
+	padding: 5px 0px 5px 28px;
+}
+.titulo-premio span.negro {
+	color: #000;
+}
+.subtitulo-premio {
+	/*font-family: 'FuturaStd-Medium';*/
+	color: #4d4d4d;
+	margin: 0px;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	text-align: center;
+	font-weight: normal;
+}
+.subtitulo-premio span.rojo {
+	font-family: 'gotham-black';
+	color: #ea696e;
+}
+.barra-progreso {
+	position: relative;
+	height: 6px;
+	border: solid 1px #ea696e;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.icono-progreso {
+	background-color: #333333;
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: url(../img/iconBtnProgreso.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: calc(-50% - 10px);
+	left: 0%;
+}
+.progreso {
+	height: 6px;
+	background-color: #ea696e;
+	display: block;
+}
+.content-foto-grande {
+	width: 100%;
+  height:90%;
+	overflow: hidden;
+	position:relative;
+//  background-color: red;
+
+}
+.content-foto-grande img {
+	width: 100%;
+	height: 120%;
+
+
+	//transform: scale(1.05);
+}
+.titulo-tatuaje {
+	/*font-family: 'FuturaStd-Medium';*/
+	color: #fff;
+	margin: 0px 0px 10px 0px;
+	text-align: left;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+
+.tags {
+
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	text-align :center;
+	justify-content:center ;
+}
+.tags li {
+	margin: 0pt 3pt 0pt 0pt;
+}
+.tags li a {
+
+	//color: #62c2a4;
+//	color: #62c2a4;
+	text-decoration: none;
+	//font-family: 'FuturaStd-light';
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+}
+.select-estrellas {
+	width: 70%;
+	margin-right: 3%;
+	margin-left: 0%;
+}
+.total-estrellas {
+	width: 50%;
+	margin-right: 10px;
+}
+.content-btn-sm {
+
+	width: 33%;
+}
+
+.calificacionCenter {
+
+padding: 9pt 3pt 7pt 3pt ;
+}
+.content-foto-periodo {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.periodo {
+	background-color: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	bottom: 20px;
+	z-index: 1;
+	text-align: center;
+	padding: 12px;
+	border-radius: 8px;
+	left: 15%;
+	width: calc(70% - 0px);
+	box-sizing: border-box;
+
+}
+.periodo a {
+	display: inline-block;
+	text-decoration: none;
+	/*font-family: 'FuturaStd-Medium';*/
+	color: #333333;
+	font-size: 1.3rem;
+	margin: 0px 5px 0px 0px;
+	padding: 0px 4px 0px 0px;
+	border-right: solid 1px #333333;
+	line-height: 0.8rem;
+}
+.periodo a:last-child {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+.periodo a.activo {
+	font-family: 'gotham-black';
+}
+.total-votos {
+	font-size: 0.9rem;
+	text-align: center;
+	font-family: 'gotham-black';
+	color: #ea696e;
+}
+.input-buscar {
+	border: none;
+	width: 100%;
+	background-image: url(../assets/icon/BUSCAR.svg);
+	background-repeat: no-repeat;
+	background-position: 4px center;
+	background-size: 6%;
+	/*font-family: 'FuturaStd-Medium';*/
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	margin: 0px;
+	padding: 9px 0px 6px 30px;
+	color: #999999;
+	font-weight: normal;
+	box-sizing: border-box;
+}
+.usuario-artista, .nombre-artista, .ubicaion-artista, .total-votos-artista, .content-estrellas-artista, .inkpoint-artista {
+	display: block;
+	width: 100%;
+	/*font-family: 'FuturaStd-Medium';*/
+	font-size: 0.8rem;
+	color: #333;
+}
+.ubicaion-artista{
+  display: block;
+	width: 100%;
+	/*font-family: 'FuturaStd-Medium';*/
+	font-size: 0.8rem;
+	color: #fff;
+
+}
+.nombre-artista {
+	color: #fff;
+	font-size: 1.3rem;
+}
+.total-votos-artista, .content-estrellas-artista, .inkpoint-artista {
+	text-align: right;
+}
+.inkpoint-artista {
+	color: #1a1a1a;
+	background-image: url(../img/iconInkPoints-negro.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 7%;
+	font-size: 0.7rem;
+}
+
+.icon-inkpoink {
+	width:40%;
+	margin:0px auto 10px auto;
+	display:block;
+}
+.icon-inkpoink img {
+	width:100%;
+	height:auto;
+}
+
+.inkPoints-usuario {
+	display:block;
+	text-align:center;
+	color:#fff;
+}
+
+
+
+
+/************************Rango*************************************/
+
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #EA696E;
+  border-radius: 5px;
+  border: 1px solid #ea696e;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background: #333333;
+		background-image:url(../assets/icon/iconBtnProgreso.svg);
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size:50%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -15.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #EA696E;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #EA696E;
+  border-radius: 5px;
+  border: 1px solid #ea696e;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background: #333333;
+		background-image:url(../assets/icon/iconBtnProgreso.svg);
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size:50%;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #EA696E;
+  border: 1px solid #ea696e;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #EA696E;
+  border: 1px solid #ea696e;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background: #333333;
+		background-image:url(../assets/icon/iconBtnProgreso.svg);
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size:50%;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #EA696E;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #EA696E;
+}
+
+/*------------------------------lista informacion solicitud--------------------*/
+.informacion-solicitud {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.informacion-solicitud li {
+	display: flex;
+	align-items: center;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 10px 0px;
+	border-bottom: solid 1px #666;
+}
+.informacion-solicitud li:last-child {
+	padding: 0px;
+	margin: 0px;
+	border-bottom: none;
+}
+.nombre-campo {
+	width: 30%;
+	flex-shrink: 0;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 2px 0px 2px 25px;
+	background-size: 18%;
+}
+.info-campo {
+	flex-grow: 1;
+	color: #666;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+
+
+.informacion-solicitud.artista {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	flex-wrap:wrap;
+	display:flex;
+}
+.informacion-solicitud.artista li {
+	display: flex;
+	align-items: center;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 10px 0px;
+	border-bottom: none;
+	width:50%;
+}
+.informacion-solicitud.artista li:nth-child(1) {
+	display: flex;
+	align-items: center;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 10px 0px;
+	border-bottom: none;
+	width:100%;
+}
+
+.informacion-solicitud.artista  .nombre-campo {
+	width: auto;
+	flex-shrink: 1;
+	font-size: 0.8rem;
+	line-height: 0.8rem;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 2px 10px 2px 20px;
+	background-size: 25%;
+}
+.informacion-solicitud.artista  .info-campo {
+	flex-grow: 1;
+	color: #666;
+	font-size: 0.8rem;
+	line-height: 0.8rem;
+}
+
+.iconInfo-fecha {
+	background-image: url(https://firebasestorage.googleapis.com/v0/b/ink360-b7047.appspot.com/o/MultimediaAPP%2Fartista%2FFECHAR.svg?alt=media&token=7bbf60d3-249b-40f6-aa76-38a4c2610659);
+}
+.iconInfo-inkpoints {
+	background-image: url(../img/iconInfo-inkPoints.svg);
+}
+.iconInfo-direccion {
+	background-image: url(https://firebasestorage.googleapis.com/v0/b/ink360-b7047.appspot.com/o/MultimediaAPP%2Fartista%2FDIRECCIONR.svg?alt=media&token=f5ad6f65-1afe-4906-941a-5efd80631d72);
+}
+.iconInfo-seccion {
+	background-image: url(../img/iconInfo-Secciones.svg);
+}
+
+.votos-tatuajes {
+   // background-color: rgba(255, 255, 255, 0.79);
+    color: #e7ab30;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    padding: 5px;
+    border-radius: 3px;
+    width: 60%;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.votos-tatuajes-puesto {
+    //background-color: rgba(255, 255, 255, 0.79);
+    color: #e7ab30 ;
+    //padding-top: 1rem;
+    position: absolute;
+    bottom: 83%;
+
+    left: 1%;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    //padding: 5px;
+    //border-radius: 3px;
+    width: 30%;
+    //box-sizing: border-box;
+}
+
+.votos-tatuajes-numero1 {
+   // background-color: rgba(255, 255, 255, 0.79);
+    color: #e7ab30;
+    position: absolute;
+    bottom: 2%;
+    //left: 80%;
+    right: 1%;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    padding: 5px;
+    border-radius: 3px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.votos-tatuajes-puesto-numero1 {
+    //background-color: rgba(255, 255, 255, 0.79);
+    color: #e7ab30 ;
+    //padding-top: 1rem;
+    position: absolute;
+    bottom: 90%;
+
+    left: 1%;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    //padding: 5px;
+    //border-radius: 3px;
+    width: 30%;
+    //box-sizing: border-box;
+}
+
+
+/*-----------------estilos modal--------------*/
+.modal {
+	background-color: rgba(0, 0, 0, 0.49);
+	//background-color: #62c2a4;
+	width: 100vw;
+	height: 100vh;
+	//position: absolute;
+	//left: 0;
+	//top: 0;
+	//display: flex;
+	align-items: center;
+	justify-content: center;
+	//border-radius :5% ;
+	//z-index: 20;
+}
+
+.content-modal {
+	background-color: #62c2a4;
+	//border: solid #62c2a4 2px;
+	//border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	font-family: 'gotham-light';
+	width: 80%;
+	flex-shrink: 0;
+	position:relative ;
+	left:10%;
+
+	top:calc(50% - 15vh);
+
+	border-radius :2rem ;
+	padding : 2rem;
+	height : 30vh;
+	//height :100%;
+}
+
+.content-modal-calificacion {
+	background-color: #62c2a4;
+	//border: solid #62c2a4 2px;
+	//border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	font-family: 'gotham-light';
+	width: 80%;
+	flex-shrink: 0;
+	position:relative ;
+	left:10%;
+
+	top:calc(50% - 17vh);
+
+	border-radius :2rem ;
+	padding : 2rem;
+	height : 35vh;
+	//height :100%;
+}
+
+.content-modal-calificacion button {
+	border: none;
+	background-color: #fff;
+	border-radius: 0px 0px 3px 3px;
+	color: #62c2a4;
+	padding: 7px 0px;
+	font-size: 1.8rem;
+	font-family: 'gotham-light';
+	width: 70% ;
+	margin-left : 15%;
+}
+
+
+.info-modal {
+	background-color: #62c2a4;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+	padding: 0px 30px;
+	border-radius :5% ;
+}
+.info-modal h1 {
+	margin: 0px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	border-radius :5% ;
+}
+.info-modal p {
+	color: #fff;
+	margin-bottom: 10px;
+	font-size: 1.4rem;
+	font-weight: lighter;
+	border-radius :5% ;
+}
+.content-modal button {
+	border: none;
+	background-color: #fff;
+	border-radius: 0px 0px 3px 3px;
+	color: #62c2a4;
+	padding: 7px 0px;
+	font-size: 1.8rem;
+	font-family: 'gotham-light';
+	width: 70% ;
+	margin-left : 15%;
+}
+
+
+/*---------------botones artistas PERFIL------------------*/
+.content-botones-perfil {
+	display:flex;
+	width:100%;
+	flex-wrap: wrap;
+}
+.content-botones-perfil button {
+	width:50%;  //original
+	//width:50%;
+	flex-shrink: 0;
+	border: none;
+	padding: 9pt  7pt 7pt 7pt ;
+	color: #fff;
+	font-family: 'gotham-light';
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	background-color: #999;
+}
+.content-botones-perfil button.activo {
+    background-color: #F05B5B;
+}
+
+/*---------------botones artistas encuesta------------------*/
+.content-botones-encuesta {
+	display:flex;
+	width:100%;
+	flex-wrap: wrap;
+}
+.content-botones-encuesta button {
+	//width:33.3%;  original
+	width:49%;
+	flex-shrink: 0;
+	border: none;
+	padding: 10px 0px ;
+	color: #fff;
+	font-family: 'gotham-light';
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	background-color:#475994;
+}
+
+/*---------------botones artistas tatuajes------------------*/
+.content-botones {
+	display:flex;
+	width:100%;
+	flex-wrap: wrap;
+}
+.content-botones button {
+	width:50%;
+	flex-shrink: 0;
+	border: none;
+	padding: 10px 0px;
+	color: #fff;
+	font-family: 'gotham-light';
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	background-color: #97999C;
+}
+.content-botones button.activo {
+    background-color: #62c2a4;
+}
+
+/*---------------encabezado nuevo mis solicitudes------------------*/
+.btn-misSolicitudes {
+	border: none;
+	background-color: #62c2a4;
+	color: #fff;
+	font-family: 'gotham-light';
+	border-radius: 5px;
+	padding: 10px 0px;
+	font-size: 0.7rem;
+	margin-bottom :2px;
+}
+.content-info-inkPoint {
+	padding-top:10%;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	//flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+.info-inkPoint {
+	//width: 32%; original
+	width: 38%;
+	background-color: #a8c94b;
+	flex-shrink: 0;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 0.9rem;
+	border: solid 1px #a8c94b;
+    line-height: 1.8rem;
+
+}
+.info-inkPoint span {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 0px 0px;
+}
+
+
+/*.info-inkPoint span.puntos {
+	display: block;
+	width: 100%;
+	height :48%;
+	//font-size:1.1rem;
+	text-align: center;
+//	padding: 3px 0px;
+}*/
+.info-inkPoint span:last-child {
+	background-color: #fff;
+	color: #62c2a4;
+	border-radius: 0px 0px 5px 5px;
+	font-family: 'gotham-medium';
+	font-size: 1.0rem;
+	//line-height: 1.4rem;
+}
+.btn-cargaInkpoints {
+	width: 20%;
+	flex-shrink: 0;
+	border: none;
+	background-color: #a8c94b;
+	//background-image :  url(https://firebasestorage.googleapis.com/v0/b/ink360-b7047.appspot.com/o/MultimediaAPP%2Fartista%2FQR.svg?alt=media&token=65c8bd4d-9a5f-40d1-8283-fae7c38cfece);
+	background-image : url('../assets/icon/ADD_FOTO.svg');
+	background-position :center ;
+	background-repeat :no-repeat;
+	background-size : 60%;
+	color: #fff;
+	font-family: 'gotham-light';
+	font-size: 0.6rem;
+	border-radius: 3px;
+	line-height: 0.9rem;
+}
+.flex-star {
+	justify-content:flex-start !important;
+	text-align:top;
+
+}
+
+.topNegativo{
+   top : -10%;
+}
+
+/*-----------------------banner--------------------*/
+.content-banner {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	color: #62c2a4;
+	padding :8pt 8pt  5pt 8pt ;
+}
+.cantidad-votos {
+	font-family: 'gotham-light';
+	font-size: 2rem;
+	flex-shrink: 0;
+	margin-right: 5px;
+	line-height: 2rem;
+}
+.info-banner {
+	/* background-color: red; */
+	font-family: 'gotham-light';
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	font-size: 0.9rem;
+	line-height: 0.9rem;
+}
+.iconGuardar {
+	width: 9%;
+	flex-shrink: 0;
+	margin-left: 7px;
+}
+.iconGuardar img {
+	width: 100%;
+	height: auto;
+}
+.iconSolicitud{
+	width: 8%;
+	flex-shrink: 0;
+	margin-left: 7px;
+}
+
+/*----------------------layuot vista info inkpoints----------------------*/
+
+.flex-center {
+	justify-content: center !important;
+}
+.lista-infoInkPoints {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.lista-infoInkPoints li {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.lista-infoInkPoints li:last-child {
+	margin-bottom: 0px;
+}
+.lista-infoInkPoints .icon {
+	flex-shrink: 0;
+	display: block;
+	width: 10%;
+	margin-right: 2%;
+}
+.lista-infoInkPoints .icon img {
+	width: 100%;
+	height: auto;
+}
+.lista-infoInkPoints .campoInfoInkPoints {
+	flex-shrink: 0;
+	width: 38%;
+	color: #1a1a1a;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+}
+.lista-infoInkPoints .valorInfoInkPoints {
+	flex-shrink: 1;
+	width: 25%;
+	font-size: 1.7rem;
+	line-height: 1.7rem;
+	color: #62c2a4;
+	font-family: 'gotham-medium';
+	padding-right: 5px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.lista-infoInkPoints .estadoInfoInkPoints {
+	flex-shrink: 0;
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.lista-infoInkPoints .btnInfoInpoint, .infoInkPoints .btnInfoInpoint {
+	border: none;
+	background-color: #62c2a4;
+	color: #fff;
+	font-family: 'gotham-medium';
+	width: 100%;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	border-radius: 5px;
+	padding: 8px 0px;
+	align-self: stretch;
+}
+.infoInkPoints .btnInfoInpoint {
+	width: auto;
+	padding:8px 20px;
+}
+.lista-infoInkPoints .btnInfoInpoint:disabled {
+	color: #999999;
+	background-color: #eeeeee;
+}
+.lista-infoInkPoints .btnInfoInpoint.nombre {
+	color: #999999;
+	background-color: #eeeeee;
+}
+
+.infoInkPoints .btnInfoInpoint:disabled {
+	color:#fff;
+	background-color:#e6e6e6;
+}
+.infoInkPoints .btnInfoInpoint.comprar{
+	color:#fff;
+	background-color:#e7ab30;
+
+//	background-color:#e7ab30;
+//	border-bottom-color:#c08a25;
+}
+.infoInkPoints p {
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+}
+
+
+
+/*-----------------------------sesion confirmada-----------------------*/
+
+
+.informacion-sesion {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.informacion-sesion li {
+	display: flex;
+	align-items: center;
+	padding: 0px;
+	margin: 0px 0px 20px 0px;
+	border-bottom: none;
+}
+.informacion-sesion li:last-child {
+	padding: 0px;
+	margin: 0px;
+	border-bottom: none;
+}
+.informacion-sesion .nombre-campo {
+	width: 40%;
+	flex-shrink: 0;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 8px 0px 8px 35px;
+	background-size: 23%;
+}
+.informacion-sesion .info-campo {
+	flex-grow: 1;
+	color: #666;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+
+}
+
+.informacion-sesion .iconInfo-fecha {
+	background-image: url(https://firebasestorage.googleapis.com/v0/b/ink360-b7047.appspot.com/o/MultimediaAPP%2Fartista%2FFECHAR.svg?alt=media&token=7bbf60d3-249b-40f6-aa76-38a4c2610659) ;
+}
+.informacion-sesion .iconInfo-inkpoints {
+	background-image: url(https://firebasestorage.googleapis.com/v0/b/ink360-b7047.appspot.com/o/MultimediaAPP%2Fcliente%2FACTIVOO.svg?alt=media&token=f7286215-797c-4b81-8a40-16c24a51dbea);
+}
+.informacion-sesion .iconInfo-direccion {
+	background-image: url(https://firebasestorage.googleapis.com/v0/b/ink360-b7047.appspot.com/o/MultimediaAPP%2Fartista%2FDIRECCIONR.svg?alt=media&token=f5ad6f65-1afe-4906-941a-5efd80631d72);
+}
+.informacion-sesion .iconInfo-hora {
+	background-image: url(https://firebasestorage.googleapis.com/v0/b/ink360-b7047.appspot.com/o/MultimediaAPP%2Fartista%2FHORAR.svg?alt=media&token=94ec151f-4940-48b8-949b-bcd91a0d1379);
+}
+/*----------------------------------*/
+
+
+
+/*----------------------------------lista productos-----------------------------------*/
+.listaProductos {
+	padding: 0px;
+	margin: 0;
+}
+.listaProductos li {
+	list-style: none ;
+	background-color: #f2f2f2 !important;
+	margin-bottom: 20px ;
+	position: relative !important;
+	color: #fff;
+}
+.listaProductos .fotoProducto {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	padding: 10px !important;
+}
+.listaProductos .fotoProducto img {
+	width: 100% !important;
+	height: 100% !important;
+}
+.listaProductos .datosProducto {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 0.8rem;
+}
+.listaProductos .valorProducto {
+    margin: 7px 0px 0px 0px;
+    font-size: 1rem;
+}
+
+span.inkPointProducto {
+	background-image:url(../assets/icon/iconInkPoint-blanco.svg);
+	background-repeat: no-repeat;
+	background-size: 40%;
+
+	background-position: -0.2rem center ;
+
+	}
+
+span.inkPointProductoRojo {
+	background-image:url(../assets/icon/INKPOINT_ROJO.svg);
+	background-repeat: no-repeat;
+	background-size: 7%;
+	background-position: -0.2rem center ;
+	padding : 0.4rem 0px 0px 2.3rem ;
+
+
+	}

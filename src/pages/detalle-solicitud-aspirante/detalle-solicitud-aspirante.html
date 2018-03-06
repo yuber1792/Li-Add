@@ -1,0 +1,109 @@
+<!--
+  Generated template for the DetalleSolicitudAspirantePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{infoSolicitud.nombreArtista}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<!--
+  Generated template for the CalificacionIngresoPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding>
+
+  <div class="header-ranking">
+    
+  <h3 class="fuente-rojo">Solicitud de artista</h3>
+  </div>
+
+
+
+  <ul class="lista-tatuajes">
+  <div *ngFor="let ObjRanking of infoSolicitud.trabajos ; let i = index ;">
+
+         <div class="content-foto-periodo" *ngIf="i === 0">
+          <div class="content-foto-grande">
+              <!--<img (click)="showDetalleTatuaje(ObjRanking.urlImagen ,ObjRanking.calificacion ,ObjRanking.uidTatuajeArtista)" [src]="ObjRanking.urlImagen" alt="">-->
+              <img (click)="zoom(ObjRanking)" [src]="ObjRanking" alt="">
+          </div>
+
+
+
+        </div>
+
+
+        <li class="content-cuadrado" *ngIf="i > 0" >
+          <!--<div class="contenido">  <img (click)="showDetalleTatuaje(ObjRanking.urlImagen ,ObjRanking.calificacion ,ObjRanking.uidTatuajeArtista)" [src]="ObjRanking.urlImagen" style="height 30%;" alt="">-->
+            <div class="contenido">  <img (click)="zoom(ObjRanking)" [src]="ObjRanking" style="height 30%;" alt="">
+
+
+          </div>
+        </li>
+
+
+    </div>
+  </ul>
+
+  <br>
+
+
+
+	<!--<p class=" fuente-gris fuente-centrado">Total calificaciones : {{totalCalificaciones}}.</p>-->
+
+	<h3 class="fuente-rojo">Resultado</h3>
+
+ 
+  <div *ngIf="!infoSolicitud.calificado">
+
+      <br>
+      <p>Calidad línea</p>
+      <div class="centrado" >
+      	  <span>{{promedioCalidadLinea}}</span>
+      </div>
+      <br>
+      <p>Calidad color</p>
+      <div class="centrado" >
+      	  <span>{{promedioCalidadColor}}</span>
+      </div>
+      <br>
+      <p>Contraste</p>
+      <div class="centrado" >
+        <span>{{promedioContraste}}</span>
+      </div>
+      <br>
+      <p>Definición</p>
+      <div class="centrado" >
+      	<span>{{promedioDefinicion}}</span>
+      </div>
+      <br>
+      <p>Diseño</p>
+      <div class="centrado" >
+      	<span>{{promedioDiseno}}</span>
+      </div>
+      <br>
+      <p>Anatomia</p>
+      <div class="centrado" >
+       	<span>{{promedioAnatomia}}</span>
+      </div>
+      <br>
+
+  </div>
+	
+	<p class=" fuente-gris fuente-centrado">Promedio total : {{promedioTotal}}.</p>
+
+
+ 
+
+</ion-content>

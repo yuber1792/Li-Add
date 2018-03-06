@@ -2,9 +2,14 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import { CanjesClientesPage } from '../pages/canjes-clientes/canjes-clientes';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { AspirantesPage } from '../pages/aspirantes/aspirantes';
+import { AsignarInkpointsPage } from '../pages/asignar-inkpoints/asignar-inkpoints';
+import { AngularFireDatabase } from 'angularfire2/database-deprecated';
+//import { CalificacionIngresoPage } from '../../pages/calificacion-ingreso/calificacion-ingreso';
+import { Storage } from '@ionic/storage';
 
 @Component({
   templateUrl: 'app.html'
@@ -12,7 +17,7 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = AspirantesPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -21,11 +26,15 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+     // { title: 'Home', component: HomePage },
+      { title: 'Ink Points', component: AsignarInkpointsPage },
+      { title: 'Canje Clientes', component: CanjesClientesPage },
+      { title: 'Aspirantes', component: AspirantesPage }
+      
     ];
 
   }
+
 
   initializeApp() {
     this.platform.ready().then(() => {
