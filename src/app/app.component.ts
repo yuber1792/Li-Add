@@ -10,6 +10,9 @@ import { AsignarInkpointsPage } from '../pages/asignar-inkpoints/asignar-inkpoin
 import { AngularFireDatabase } from 'angularfire2/database-deprecated';
 //import { CalificacionIngresoPage } from '../../pages/calificacion-ingreso/calificacion-ingreso';
 import { Storage } from '@ionic/storage';
+import { ArtistasPage } from '../pages/artistas/artistas';
+import { CitasPage } from '../pages/citas/citas';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -27,9 +30,11 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
      // { title: 'Home', component: HomePage },
-      { title: 'Ink Points', component: AsignarInkpointsPage },
+      { title: 'Escaner Usuario', component: AsignarInkpointsPage },
       { title: 'Canje Clientes', component: CanjesClientesPage },
-      { title: 'Aspirantes', component: AspirantesPage }
+      { title: 'Aspirantes', component: AspirantesPage },
+      { title: 'Artistas', component: ArtistasPage }
+      //{ title: 'Citas', component: CitasPage }
       
     ];
 

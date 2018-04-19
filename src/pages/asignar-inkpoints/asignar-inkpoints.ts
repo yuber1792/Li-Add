@@ -38,21 +38,21 @@ export class AsignarInkpointsPage {
             this.dataInfoApp.subscribe(snapshot => {
               console.log("********");
               console.log("**** PERFL CLIENTE****");
-              console.log(snapshot.key)
-              console.log(snapshot.val());
-              this.dataCliente = snapshot.val() ; 
+              console.log(snapshot.key);
+              console.log(JSON.stringify(snapshot.val()));
+              this.dataCliente = snapshot.val() ;
+              this.dataCliente.key =  snapshot.key;
+              console.log("JURADO  = " +this.dataCliente.jurado);
+              if(this.dataCliente.jurado){
+                this.dataCliente.jurado =true;
+              }else{
+                this.dataCliente.jurado =false;
+              }
+
+
               
             });
 
-            if(this.dataCliente != null  ){
-                console.log("********");
-                console.log("Muestra info");
-                let nuevosPuntos = parseInt(this.dataCliente.inkPoints) + parseInt(this.cantidad) ;                  
-			    const itemObservableCliente = this.af.object('/PerfilCliente/'+barcodeData.text);
-		        itemObservableCliente.update({ inkPoints: nuevosPuntos });
-		        alert("transaccion exitosa ");			       
-            }
-      
       
       
 
@@ -64,5 +64,33 @@ export class AsignarInkpointsPage {
           alert("Error en transaccion  ");
       });
 }
+
+setJurado(){
+  console.log("cambio" + this.dataCliente.jurado);
+  if(this.dataCliente.jurado){
+    const itemObservableCliente = this.af.object('/PerfilCliente/'+this.dataCliente.key);
+                  itemObservableCliente.update({ jurado: true });
+  }else{
+    const itemObservableCliente = this.af.object('/PerfilCliente/'+this.dataCliente.key);
+                  itemObservableCliente.update({ jurado: false });
+  }
+  
+}
+
+asignarInkpoints(){
+
+
+            if(this.dataCliente != null  ){
+                console.log("********");
+                console.log("Muestra info");
+                let nuevosPuntos = parseInt(this.dataCliente.inkPoints) + parseInt(this.cantidad) ;                  
+                const itemObservableCliente = this.af.object('/PerfilCliente/'+this.dataCliente.key);
+                  itemObservableCliente.update({ inkPoints: nuevosPuntos });
+                  alert("transaccion exitosa ");             
+            }
+      
+
+}
+
 
 }

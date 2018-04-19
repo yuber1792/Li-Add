@@ -7,6 +7,8 @@ import { ListPage } from '../pages/list/list';
 import { AsignarInkpointsPage } from '../pages/asignar-inkpoints/asignar-inkpoints';
 import { CanjesClientesPage } from '../pages/canjes-clientes/canjes-clientes';
 import { AspirantesPage } from '../pages/aspirantes/aspirantes';
+import { ArtistasPage } from '../pages/artistas/artistas';
+import { CitasPage } from '../pages/citas/citas';
 import { DetalleSolicitudAspirantePage } from '../pages/detalle-solicitud-aspirante/detalle-solicitud-aspirante';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -35,7 +37,9 @@ export const firebaseConfig = {
     AspirantesPage,
     DetalleSolicitudAspirantePage,
     AsignarInkpointsPage,
-    CanjesClientesPage
+    CanjesClientesPage,
+    ArtistasPage,
+    CitasPage
   ],
   imports: [
     BrowserModule,
@@ -53,7 +57,9 @@ export const firebaseConfig = {
     AspirantesPage,
     DetalleSolicitudAspirantePage,
     AsignarInkpointsPage,
-    CanjesClientesPage
+    CanjesClientesPage,
+    ArtistasPage,
+    CitasPage
     
   ],
   providers: [
